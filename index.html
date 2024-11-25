@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foodies</title>
+    </head>  
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>  
+        <link rel="stylesheet" href="style.css">
+    <style>
+       body {
+            font-family: 'Baloo Bhai';
+            margin: 0px;
+            padding: 0px;
+            background: url('bgpic.png');
+        }
+        .left{
+           /* border: 2px solid red; */
+           position:absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+            /* font-family: 'Baloo Bhai'; */
+        }
+        .left img{
+            width: 136px;
+            /* display: inline-block; */
+            /* filter: invert(100%); */
+        }
+        .left div{
+            text-align: center;
+            font-size: 26px;
+        }
+        .mid{
+            /* border: 2px solid green; */
+            width: 60%;
+            margin: 20px 1000px;
+            display: block;
+        }
+            .navbar{
+                display: inline-block;
+               
+            }
+            .navbar li{
+                display: inline-block;
+                /* color: white; */
+                font-size: 45px;
+                
+            }
+            .navbar li a{
+                color: yellow;
+                text-decoration: none;
+                padding: 34px 23px;
+            }
+            .navbar li a:hover, .navbar li a.active{
+                color: white;
+            }
+            .btn{
+                /* right: 60px; */
+                font-family: 'Baloo Bhai';
+                background-color: rgb(24, 131, 33);
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                font-size: 30px;
+                cursor: pointer;
+                margin: 20px 10px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color: rgb(10, 100, 10);
+                color: rgba(255, 255, 255, 0.684);
+            }
+            .right{
+            /* border: 2px solid blue; */
+            position:absolute;
+            right: 60px;
+            top: 20px;
+            display: inline-block;
+            }
+            .container{
+                
+                width: 35%;
+                margin: 106px 150px;
+                /* border: 2px solid red; */
+                
+                /* text-align: center; */
+                padding: 75px;
+                font-size: 17px;
+                color: white;
+            }
+            .form-group input{
+                font-family: 'Baloo Bhai';
+               text-align: center;
+               display: block;/* to make it in new line */
+                width: 508px;
+                padding: 10px;
+                margin: 12px auto;
+                border-radius: 10px;
+                font-size: 30px;
+                border: 2px solid rgb(24, 131, 33);
+            }
+            .container h1{
+                text-align: center;
+                font-size: 60px;
+                color: white;
+            }
+            .container button{
+              display: block;
+              width:46%;
+              margin: 20px auto;
+            }
+    </style>
+    
+    <body>
+        <header class="header">
+            <!-- Left box for logo -->
+          <div class="left">
+             <!-- I'm the left box -->
+             <img src="logo.png" alt="image here">
+             <div>Healthy Foodies</div>
+             
+            </div>
+            <!-- Mid box for navbar -->
+          <div class="mid">
+            <!-- I'm the mid box -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+             </ul>
+          </div>
+          <!-- Right box for buttons -->
+          <div class="right">
+            <!-- I'm the right box -->
+             <button class="btn">Add to Cart</button>
+                <button class="btn">Order Now</button>
+          </div>
+        </header>
+        <div class="container">
+            <!-- i am the container -->
+             <h1>Join the best healthy food of Delhi</h1>
+             <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your address">
+                </div>
+                <button class="btn">Submit</button>
+             </form>
+        </div>
+    </body>
+    
+</html>
